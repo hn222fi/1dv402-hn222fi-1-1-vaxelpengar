@@ -63,7 +63,7 @@ namespace _1dv402_hn222fi_1_1_vaxelpengar
                     Console.Write(prompt);
                     readValue = double.Parse(Console.ReadLine());
                     // -Verkar fel i decimalfrågan
-                    if (readValue<1 || !((readValue*100)%1 ==0))
+                    if (readValue<1 || ((readValue*100)%1 !=0))
                     {
                         throw new ApplicationException();
                     }
